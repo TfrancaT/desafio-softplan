@@ -1,0 +1,225 @@
+/* Padrão */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 70px 0;
+}
+
+p,
+li,
+h5 {
+  color: #444;
+  font-size: 14px;
+}
+
+/* Barra de navegação */
+
+header,
+.navbar {
+  background-color: #385c81;
+  height: 80px;
+}
+
+#logo {
+  margin-left: 1%;
+}
+
+#menuOptions {
+  margin-right: 40px;
+}
+
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#logo {
+  width: 250px;
+}
+
+.navbar-brand {
+  padding: 0;
+  color: #fff;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+#navbar-links a {
+  color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 1rem 0.8rem;
+}
+
+/* Styles para carousel */
+
+.c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  opacity: 80%;
+}
+
+.main-btn {
+  text-decoration: none;
+  background-color: #385c81;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  transition: 0.5s;
+}
+.main-btn:hover {
+  color: #fff;
+  background-color: transparent;
+  border-color: #385c81;
+}
+
+.carousel-indicators .active {
+  background-color: #385c81;
+}
+
+/* Seção Sobre Núcleo */
+
+#about-area {
+  background-color: #F9F9F9;
+}
+
+.main-title {
+  color: #444;
+  margin: 0 0 65px 0;
+  font-size: 32px;
+  text-align: center;
+  position: relative;
+}
+
+.main-title::after {
+  content: "";
+  border-top: 3px solid #333;
+  width: 15%;
+  position: absolute;
+  top: 60px;
+  left: 42.5%;
+}
+
+.about-title {
+  font-size: 17px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#about-list {
+  color: #333;
+  list-style: none;
+  padding-left: 0;
+}
+
+#about-list i {
+  font-style: normal;
+  margin-right: 15px;
+}
+
+/* Seção de Cursos */
+
+.service-box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service-box i, .service-box h4 {
+  transition: .5s;
+}
+
+.service-box i {
+  font-size: 44px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.service-box h4 {
+  font-size: 28;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.service-box:hover > i, .service-box > h4 {
+  color: #385c81;
+}
+
+/* Seção de Formulário */
+#form-area {
+  text-align: center;
+  background-color: #F9F9F9;
+}
+
+#inputName, #lastName, #inputEmail {
+  border-radius: 20px;
+  border: 1px solid #385c81;
+  box-sizing: border-box;
+  width: 40%;
+  height: 40px;
+  margin: 10px;
+  margin-left: 30%;
+}
+
+#textDuvida {
+  border: 1px solid #385c81;
+  box-sizing: border-box;
+  width: 40%;
+  height: 200px;
+  margin-left: 30%;
+}
+
+#duvida-btn {
+  border-radius: 20px;
+  background-color: #385c81;
+  color: #F9F9F9;
+  height: 40px;
+  padding: 0 30px;
+}
+/* Seção de Formulário */
+
+/* Seção do Footer */
+#content-area {
+  text-align: center;
+}
+
+.contact-box {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #385c81;
+}
+
+.contact-box i {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-box p {
+  font-size: 16px;
+}
+
+.contact-title {
+  font-size: 24px;
+}
+
+#dropButton {
+  border: 1px solid #444;
+  border-radius: 0;
+  background-color: #F9F9F9;
+  color: #333;
+}
+/* Seção do Footer */

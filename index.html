@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Núcleo de Apoio a Tecnologia</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />   
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://kit.fontawesome.com/6bd180a08e.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    <!-- Seção Cabeçalho/Barra de Navegação -->
+    <header>
+      <div class="container" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <a href="#" class="navbar-brand">
+            <img
+              id="logo"
+              src="img/logo.png"
+              alt="Ícone do Núcleo de Apoio a Tecnologia"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-links"
+            aria-controls="navbar-links"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbar-links"
+          >
+            <div id="menuOptions" class="navbar-nav">
+              <a class="nav-item nav-link" id="home-menu">Inicio</a>
+              <a class="nav-item nav-link" id="about-menu">Sobre</a>
+              <a class="nav-item nav-link" id="services-menu">Cursos</a>
+              <a class="nav-item nav-link" id="register-menu">Cadastro</a>
+              <a class="nav-item nav-link" id="contact-menu">Contato</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Seção Cabeçalho/Barra de Navegação -->
+
+    <!-- Seção do Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img
+            src="img/banner1.png"
+            class="d-block w-100 c-img"
+            alt="Homens dando aperto de mãos."
+          />
+          <div class="carousel-caption">
+            <h5>Parcerias</h5>
+            <p>Cadastre sua empresa e venha apoiar esse projeto.</p>
+            <a href="#" class="main-btn">Parceria</a>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="img/banner2.png"
+            class="d-block w-100 c-img"
+            alt="Jovens estudando."
+          />
+          <div class="carousel-caption">
+            <h5>Garantir bolsa</h5>
+            <p>Comece na unidade mais próxima ou até mesmo modalidade Ead</p>
+            <a href="#" class="main-btn">Garantir bolsa</a>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="img/banner3.png"
+            class="d-block w-100 c-img"
+            alt="Jovens se formando."
+          />
+          <div class="carousel-caption">
+            <h5>Galeria</h5>
+            <p>Nossos alunos formados.</p>
+            <a href="#" class="main-btn">Ver Galeria</a>
+          </div>
+        </div>
+      </div>
+      <button
+        id="carousel-prev-button"
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        id="carousel-next-button"
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Seção do Carousel -->
+
+    <!-- Seção do Sobre -->
+    <div id="about-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="main-title">Sobre o Núcleo</h3>
+          </div>
+          <div class="col-md-6">
+            <img
+              class="img-fluid"
+              src="img/projeto.png"
+              alt="Imagem simulando construção de um projeto"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3 class="about-title">
+              Nossa missão é promover o acesso à tecnologia e ao conhecimento
+              digital
+            </h3>
+            <p>Oferecer cursos de tecnologia gratuitos de alta qualidade, promovendo a inclusão digital e reduzindo a lacuna tecnológica.</p>
+            <p>
+              Preparar os participantes para carreiras na área de tecnologia.
+            </p>
+            <p>Fomentar a inovação e o empreendedorismo tecnológico.</p>
+            <p>Nossos Valores:</p>
+            <ul id="about-list">
+              <li><i class="bi bi-gear">Servir a comunidade.</i></li>
+              <li><i class="bi bi-gear">Promover aprendizado contínuo.</i></li>
+              <li><i class="bi bi-gear">Desenvolvimento Pessoal.</i></li>
+              <li><i class="bi bi-gear">Levar o digital para todos.</i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Seção do Sobre -->
+
+    <!-- Seção dos Cursos Oferecidos -->
+    <div class="courses-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="main-title">Cursos oferecidos:</h3>
+          </div>
+
+          <div class="col-md-4 service-box">
+            <i class="bi bi-cpu"></i>
+            <h4>Informática Básica</h4>
+            <p>Aprenda o essencial da informática, incluindo uso de computadores, navegação na web e noções de segurança online.</p>
+          </div>
+
+          <div class="col-md-4 service-box">
+            <i class="bi bi-laptop"></i>
+            <h4>Programação Web</h4>
+            <p>Crie sites interativos usando HTML, CSS e JavaScript, aprendendo a construir páginas web atraentes.</p>            
+          </div>
+
+          <div class="col-md-4 service-box">
+            <i class="bi bi-phone"></i>
+            <h4>Programação Mobile</h4>
+            <p>Desenvolva aplicativos para dispositivos móveis (iOS e Android) com as linguagens Swift, Kotlin ou JavaScript, preparando-se para o mercado de desenvolvimento móvel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Seção dos Cursos Oferecidos -->
+
+    <!-- Formulário para Contato -->
+    <div id="form-area">
+      <div class="container">
+        <div class="col-md-12">
+          <h3 class="main-title">Mande sua dúvida</h3>
+        </div>
+        <form action="">
+          <input type="name" class="form-control" id="inputName" name="name" placeholder="Seu nome">
+          <input type="lastName" class="form-control" id="lastName" name="lastName" placeholder="Seu sobrenome">
+          <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Seu email">
+          <div class="mb-3">
+            <label for="textDuvida" class="form-label">Digite sua dúvida</label>
+            <textarea class="form-control" id="textDuvida" cols="30" rows="10"></textarea>
+          </div>
+          <input type="submit" id="duvida-btn" value="Enviar">
+        </form>
+      </div>
+    </div>
+    <!-- Formulário para Contato -->
+
+    <footer>
+      <div id="contact-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Nossas Redes</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="bi bi-whatsapp"></i>
+              <p><span class="contact-title">WhatsApp</span></p>              
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="bi bi-instagram"></i>
+              <p><span class="contact-title">Instagram</span></p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="bi bi-facebook"></i>
+              <p><span class="contact-title">Facebook</span></p>
+            </div>
+
+            <div class="col-md-6" id="drop-link">
+              <button id="dropButton" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Selecione o Apoio
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="http://www.salvador.ba.gov.br/">PMS - Prefeitura Municipal do Salvador</a></li>
+                <li><a class="dropdown-item" href="https://www.bahia.ba.gov.br/">GOV - Governo do Estado da Bahia</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="copy-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Desenvolvido por Tales de França &copy; 2023.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
